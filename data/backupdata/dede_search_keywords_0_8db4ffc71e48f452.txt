@@ -1,0 +1,12 @@
+INSERT INTO `dede_search_keywords` VALUES('1','123','123','7','0','1457322121','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','裹被子连夜排队购房','裹被子连夜排队购房 排队 被子 购房 连夜','5','0','1457406632','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','搜索测试','搜索测试 搜索 测试','4','0','1457342249','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','在测试下内容','在测试下内容 内容 测试','1','0','1456713343','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','头条看世界','头条看世界 头条 看世界','1','0','1456713370','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','唐人街迷男','唐人街迷男 唐人街 迷男','1','0','1456713383','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','社会','社会','15','23','1457342198','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8','足球','足球','8','0','1457342632','0','0');
+INSERT INTO `dede_search_keywords` VALUES('9','1213','1213','1','0','1457321571','0','0');
+INSERT INTO `dede_search_keywords` VALUES('10','军事','军事','1','17','1457342324','0','0');
+INSERT INTO `dede_search_keywords` VALUES('11','��?3???','��?3???','1','0','1457343178','0','0');
+INSERT INTO `dede_search_keywords` VALUES('12','是','是','1','7','1474182766','0','0');

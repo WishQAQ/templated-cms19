@@ -1,0 +1,2 @@
+INSERT INTO `dede_kwkeyword` VALUES('1','6','<listen><charset>gb2312</charset><url>http://www.5542.com/xiangchemeinv/</url><regex>http://www.5542.com/xiangchemeinv/201202/(*).html</regex></listen>','0','32','1328378448');
+INSERT INTO `dede_kwkeyword` VALUES('2','6','女','0','34','1328378449');

@@ -1,0 +1,3 @@
+<li><i class="i[field:global name=autoindex runphp="yes"]@me=@me-1;[/field:global]"></i><a
+                                  href="[field:arcurl/]"
+                                  target="_blank" title="[field:title/]">[field:title/]</a></li>

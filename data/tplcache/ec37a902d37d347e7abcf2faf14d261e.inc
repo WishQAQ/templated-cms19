@@ -1,0 +1,2 @@
+<a class="temp_3034_convalnum temp_at_maimgdwtian" href="[field:arcurl/]" target="_blank"><img class="temp_3034_convalnimg" src="[field:litpic/]" title="[field:title/]" alt="[field:title/]"><span class="temp_3034_convalnspan temp_at_maimgdwtiat" title="[field:title/]">[field:title/]</span></a>
+        <div class="margin_wdiv_vlus"></div>

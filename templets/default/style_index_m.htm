@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>{dede:global.cfg_webname/}</title>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link type="text/css" rel="stylesheet" href="assets/css/common-debug_50f4f76.css">
+<link rel="stylesheet" type="text/css" href="assets/css/pagelet_dfa255f.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/css/touch.css" />
+<link type="text/css" rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/toutiao16021901.css">
+</head>
+<body class="withHeader list-page">
+
+<!-- index header start -->
+<header id="pageletIndexHeader">
+<div class="top_bar">
+<div class="abs_m">
+<a href="/m/" class="refresh_title btn" action-type="fresh" ga_category="refresh" ga_label="" ga_event="click"></a>
+</div>
+<div class="abs_l">
+<a href="javascript:;" class="msg-box" ga_category="left_button" ga_label="" ga_event="click">
+<div class="circle"></div>
+</a>
+</div>
+<div class="abs_r">
+<a href="/m/search.php" class="btn search" ga_category="search" ga_label="" ga_event="enter"></a>
+</div>
+</div>
+<div class="top_menu_bar">
+  <div id="top_menu" class="top_menu">
+    <div class="top_menu_list">
+      <a href="/m/" class="btn cur" scroll-left="0">推荐</a>
+      {dede:channel type='top' row='17' currentstyle="<a href='/m/list.php?tid=~id~' class='btn'>~typename~</a>"}
+      <a href="/m/list.php?tid=[field:id/]" class="btn">[field:typename/]</a>
+      {/dede:channel}
+    </div>
+  </div>
+</div>
+</header>
+<!-- index header end -->
+
+<!-- channel widget start -->
+<div id="pageletChannelWidgets"></div>
+<!-- channel widget end -->
+<!-- list content start -->
+
+  <content id="pageletListContent" class="feed-list-container">
+  <ul class="ul-list focus-list" id="thelist" >
+
+ {dede:arclist row='10' titlelen='60' orderby='pubdate' }
+ <li type="guoji" subtype="" style="padding: 10px 10px 0 10px;"><a href="view.php?aid=[field:id/]" data-url="[field:arcurl/]"><div class="lb-text ">[field:title/]</div><div class="bigimg" style="background:url([field:litpic/]);background-position:center;background-size: 100%"></div>
+</a></li>
+   {/dede:arclist}
+  </ul>
+
+  </content>
+
+
+
+<div class="footer">
+   {dede:global.cfg_shoujidibu/}
+    <p><a href="{dede:global.cfg_indexurl/}">电脑版</a></p>
+</div>
+
+<div class="mask"></div>
+</body>
+</html>

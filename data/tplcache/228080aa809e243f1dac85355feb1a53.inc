@@ -1,0 +1,1 @@
+<a class="img_a  >inline" target="_blank" data-title="[field:title/]" href="[field:arcurl/]"> <img src="[field:picname function='thumb(@me,580,326,true)'/]"  width="580px"  height="326px" alt="[field:title/]"> </a>

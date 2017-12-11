@@ -1,0 +1,1 @@
+<a class="img1 block" href="[field:arcurl/]" target="_blank" title="[field:title/]"> <span class="img"><img class="animation" src="[field:picname function='thumb(@me,140,120,true)'/]" alt="[field:title/]" width="240" height="120"></span> <span class="txt">[field:title/]</span> </a>

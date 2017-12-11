@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>东方看世界</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/reset.css"/>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/page_about.css"/>
+    <script src="{dede:global.cfg_templets_skin/}/tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo-panel">
+        <div class="logo"><a href="/"><img src="{dede:global.cfg_templets_skin/}/assets/images/logo.png" alt=""/></a></div>
+    </div>
+    <div class="banner-box">
+        <img src="{dede:global.cfg_templets_skin/}/assets/images/banner.png" alt=""/>
+        <div class="banner-inner"><h3 id="J_banner_cap">关于我们</h3></div>
+    </div>
+</div>
+<div class="main clearfix" >
+    <!--选项卡-->
+    <div class="tabs clearfix">
+        <div class="tab-hd" id="J_tab_hd">
+        {dede:channel type='son' row='4' typeid='19' currentstyle="<a class='active first' href='javascript:;'>~typename~</a>"}
+            <a href="[field:typelink/]">[field:typename/]</a>
+            	{/dede:channel}
+        </div>
+        <div class="tab-bd" id="J_tab_bd">
+            <ul>
+                <!--关于我们-->
+                <li>
+                    <div class="title">
+                        {dede:type typeid='20'}[field:typename/]{/dede:type}
+                    </div>
+                    <p class="intro"><i></i>
+                   {dede:field.content/}
+                    
+                    </p>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{dede:include filename="style_footer.htm"/} 
+<!--footer结束-->
+<script src="{dede:global.cfg_templets_skin/}/apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    var $JTabHdA=$('#J_tab_hd').children('a'),index,$JTabBdLi=$('#J_tab_bd').children('ul').children('li'),$JBannerCap=$('#J_banner_cap');
+    $JTabHdA.removeClass('active');
+    $JTabHdA.eq(0).addClass('active');
+    /*$JTabBdLi.hide();
+    $JTabBdLi.eq(0).show();*/
+    $JTabHdA.click(function () {
+        $JTabHdA.removeClass('active');
+        $(this).addClass('active');
+        index=$(this).index();
+        var text=$(this).text();
+        $JBannerCap.text(text);
+        $JTabBdLi.hide();
+        $JTabBdLi.eq(index).show();
+    })
+</script>
+
+<!-- 解决IE6透明图片问题 -->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/assets/js/DDPngMin.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.png-fixIe6');</script>
+<![endif]-->
+</body>
+</html>

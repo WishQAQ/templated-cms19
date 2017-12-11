@@ -1,0 +1,2 @@
+INSERT INTO `dede_flash` VALUES('1','1','#','幻灯','','/uploads/flash/1603250003079776.jpg','1458835387','2');
+INSERT INTO `dede_flash` VALUES('2','1','#','幻灯','','/uploads/flash/1603250003189868.jpg','1458835398','2');

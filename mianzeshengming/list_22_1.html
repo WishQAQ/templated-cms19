@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>东方看世界</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/templets/default/assets/css/reset.css"/>
+    <link rel="stylesheet" href="/templets/default/assets/css/page_about.css"/>
+    <script src="/templets/default/tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo-panel">
+        <div class="logo"><a href="/"><img src="/templets/default/assets/images/logo.png" alt=""/></a></div>
+    </div>
+    <div class="banner-box">
+        <img src="/templets/default/assets/images/banner.png" alt=""/>
+        <div class="banner-inner"><h3 id="J_banner_cap">关于我们</h3></div>
+    </div>
+</div>
+<div class="main clearfix" >
+    <!--选项卡-->
+    <div class="tabs clearfix">
+        <div class="tab-hd" id="J_tab_hd">
+        
+            <a href="/guanyuwomen/">关于我们</a>
+            	
+            <a href="/lianxiwomen/">联系我们</a>
+            	
+            <a href="/mianzeshengming/">免责声明</a>
+            	
+            <a href="/yinsizhengce/">隐私政策</a>
+            	
+        </div>
+        <div class="tab-bd" id="J_tab_bd">
+            <ul>
+                <!--关于我们-->
+                <li>
+                    <div class="title">
+                        关于我们
+                    </div>
+                    <p class="intro"><i></i>
+                   &nbsp;
+                    
+                    </p>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+  <div id='footer' class="footer_cnt">
+    <p>友情链接  |
+    
+<a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> 
+
+<a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> 
+
+<a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> 
+
+    </p>
+         <p><a href="/" target="_blank">增值电信业务经营许可证（ICP）：沪B2-20050088号</a>　互联网新闻信息服务许可证:3112006001　广告经营许可证:3100003000089</p>
+    <p><a href="/" target="_blank">信息网络传播视听节目许可证：0907180</a>　互联网出版许可证:新出网证（沪）字003号　<a href="" target="_blank">广播电视节目制作经营许可证:(沪)字第406号</a></p>
+    <p class="grey12">ISO9001质量管理体系认证:00307Q10176R1S　BS17799信息安全管理体系认证:00307I10001R0S</p>
+    <p><a title="" target="_blank" href="/lianxiwomen/">联系我们</a>　|　http://localhost:9090 </p>
+  </div>
+</div> 
+<!--footer结束-->
+<script src="/templets/default/apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    var $JTabHdA=$('#J_tab_hd').children('a'),index,$JTabBdLi=$('#J_tab_bd').children('ul').children('li'),$JBannerCap=$('#J_banner_cap');
+    $JTabHdA.removeClass('active');
+    $JTabHdA.eq(0).addClass('active');
+    /*$JTabBdLi.hide();
+    $JTabBdLi.eq(0).show();*/
+    $JTabHdA.click(function () {
+        $JTabHdA.removeClass('active');
+        $(this).addClass('active');
+        index=$(this).index();
+        var text=$(this).text();
+        $JBannerCap.text(text);
+        $JTabBdLi.hide();
+        $JTabBdLi.eq(index).show();
+    })
+</script>
+
+<!-- 解决IE6透明图片问题 -->
+<!--[if lte IE 6]>
+<script type="text/javascript" src="/templets/default/assets/js/DDPngMin.js"></script>
+<script type="text/javascript">DD_belatedPNG.fix('.png-fixIe6');</script>
+<![endif]-->
+</body>
+</html>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_homepageset` VALUES('default/style_index.htm','../index.html','0');
+INSERT INTO `dede_homepageset` VALUES('default/style_index.htm','../index.html','0');

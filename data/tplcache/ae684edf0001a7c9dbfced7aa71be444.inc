@@ -1,0 +1,1 @@
+<div class="pic-r fr"> <a href="[field:arcurl/]" target="_blank"> <img class="animation" src="[field:picname function='thumb(@me,189,292,true)'/]" alt="[field:title/]" width="189" height="292"> <span class="ctg"></span> </a> </div>

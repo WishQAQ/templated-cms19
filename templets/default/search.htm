@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://s.eastday.com/assets/images/favicon.ico" type="image/x-icon" rel="icon" />
+    <title>搜索页_{dede:global.cfg_webname/}</title>
+    <meta name="keywords" content="{dede:field name='keywords'/}" />
+    <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/reset.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/common.css" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/assets/css/page_search.css" />
+     <link rel="stylesheet" href="http://www.xwcms.net/webAnnexImages/fileAnnex/201506/84279/css/zzsc.css" />
+     
+    <script type="text/javascript">
+        var newstype = 'search';
+    </script>
+     
+    </head>
+    <body>
+
+<!-- header start -->
+<div class="header">
+      <div class="header-wrap container"> <a href="{dede:global.cfg_basehost/}"><img src="{dede:global.cfg_templets_skin/}/assets/images/logo_search.png" alt="东方头条网" title="东方头条网" width="190" height="60"></a>
+    <form action="{dede:global.cfg_cmsurl/}/plus/search.php" target='_blank' class="clearfix" >
+          <div class="form-wrap fl">
+        <input id="J_search_text_input" type="text" value=""  name="q" >
+      </div>
+          <button class="btn fr" id='search_btn' type="submit" style="    display: block;
+    width: 80px;
+    height: 42px;
+    line-height: 36px;
+    background-color: #ee4c4c;
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;">搜索</button>
+          <!--  <button type="submit" style="    display: block;
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ee4c4c;
+    font-size: 18px;
+    color: #FFF;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;">搜索</button>-->
+        </form>
+    <!-- <div class="hot-word">
+                <a href="javascript:;">古镇</a><a href="javascript:;">元旦假期
+                </a><a href="javascript:;">小长假新规</a>
+            </div> --> 
+  </div>
+    </div>
+<!-- header end --> 
+
+<!-- 导航 start -->
+<div class="nav_cnt">
+      <ul class="nav">
+    <li><a href="{dede:global.cfg_basehost/}" target="_blank">头条</a></li>
+    {dede:type typeid='1'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='2'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='3'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='4'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='5'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='6'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='7'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='8'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='9'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='10'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='11'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    {dede:type typeid='12'}
+    <li><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></li>
+    {/dede:type}
+    <li> <a class='more' target="_blank">更多</a>
+          <div class="more-links"> {dede:type typeid='13'} <a href="[field:typeurl/]" target="_blank">[field:typename/]</a> {/dede:type}
+        {dede:type typeid='14'} <a href="[field:typeurl/]" target="_blank">[field:typename/]</a> {/dede:type}
+        {dede:type typeid='15'} <a href="[field:typeurl/]" target="_blank">[field:typename/]</a> {/dede:type}
+        {dede:type typeid='16'} <a href="[field:typeurl/]" target="_blank">[field:typename/]</a> {/dede:type}
+        {dede:type typeid='17'} <a href="[field:typeurl/]" target="_blank">[field:typename/]</a> {/dede:type}
+        {dede:type typeid='18'} <a href="[field:typeurl/]" target="_blank">[field:typename/]</a> {/dede:type} </div>
+        </li>
+  </ul>
+    </div>
+<!-- /导航 end --> 
+
+<!-- body start -->
+<div class="body">
+      <div class="body-wrap container">
+    <div class="clearfix mt20"> 
+          <!-- body right -->
+          <div class="body-left fl">
+        <div class="hd pr">
+              <p>搜索结果：</p>
+              <!-- <span id="J_search_total_num" class="tips">您共搜索出<em>0</em>条信息</span> --> 
+            </div>
+        <div class="bd">
+              <div id="J_result_wrap" class="result"> 
+            <!-- 有结果 -->
+            <ul id='result_list' class="result-list">
+                  {dede:list pagesize='10' titlelen='60'}
+                  <li class="J-has-share result-item-s1 clearfix">
+                <div class="img fl"><a href="[field:arcurl/]" target="_blank"><img class="animation" src="[field:litpic/]" width="145" height="105"></a></div>
+                <div class="info pr">
+                      <h3><a class="J-share-a" href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                      <p class="from">[field:pubdate function="GetDateTimeMK(@me)"/] 来源：[field:source/]</p>
+                      <div id="bdsharebuttonbox_wrap">
+                    <div class="J-bdsharebuttonbox bdsharebuttonbox clearfix"><span class="fl">分享</span><a class="J-bdshare bds-tsina fl" data-cmd="tsina" href="javascript:;"></a><a class="J-bdshare bds-qzone fl" data-cmd="qzone" href="javascript:;"></a><a class="J-bdshare bds-tqq fl" data-cmd="tqq" href="javascript:;"></a><a class="J-bdshare bds-weixin fl" data-cmd="weixin" href="javascript:;"></a></div>
+                  </div>
+                    </div>
+              </li>
+                  {/dede:list}
+                </ul>
+          </div>
+              <!-- /result --> 
+             
+           <div class="pagnation" id="pagnation" style="padding-bottom:30px;">
+      {dede:pagelist listitem="info,pre,next,pageno,option" listsize="5"/}
+	
+</div>
+
+<script>
+	var pagnation=$("#pagnation");
+	$(document).on("keydown",function(event){
+		switch(event.keyCode){
+			 case 37 : window.location.href = pagnation.find(".page-prev").attr("href");break;
+			 case 39 : window.location.href = pagnation.find(".page-next").attr("href");break
+		}
+	});
+</script>
+
+        
+     
+
+            </div>
+            
+      </div>
+      
+          <!-- /body right --> 
+          
+          <!-- body left -->
+          <div id='bodyRight' style='height:1170px;' class="body-right fr"> 
+        <!-- 今日TOP10 -->
+        <div class="section top10">
+              <div class="title pr">
+            <h3>今日TOP10</h3>
+            <span class="bt-line"></span> </div>
+              <div class="top10-list-wrap">
+            <ul id="J_top10_list" class="top10-list">
+                  {dede:arclist row='1' titlelen='50' limit='0,3'}
+                  <li class="top10-item"><span class="hot">[field:global name=autoindex runphp="yes"]@me=@me;[/field:global]</span><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                  {dede:arclist row='7' titlelen='50' limit='3,7'}
+                  <li class="top10-item"><span>[field:global name=autoindex runphp="yes"]@me=@me+3;[/field:global] </span><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></li>
+                  {/dede:arclist}
+                </ul>
+          </div>
+            </div>
+        <!-- /今日TOP10 --> 
+        
+        <!-- 广告位 - 1 -->
+        <div class="section mt20">
+              <div class="sy-1"> <img src="{dede:global.cfg_basehost/}/images/ad/15.gif"> </div>
+            </div>
+        <!-- /广告位 - 1 --> 
+        
+        <!-- 今日热点 -->
+        <div class="section mt20">
+              <div class="title pr">
+            <h3>今日热点</h3>
+            <span class="bt-line"></span> </div>
+              <div class="today-hot">
+            <div id="J_today_hot_news" class="today-hot-wrap clearfix">
+            {dede:arclist row='4' titlelen='50' flag='p'}
+                  <div class="block fl"><a href="[field:arcurl/]" target="_blank" class="img" title="[field:title/]"><img class="animation" src="[field:litpic/]" alt="" width="145" height="105"></a><a href="[field:arcurl/]" target="_blank" class="txt" title="[field:title/]">[field:title/]</a></div>
+              {/dede:arclist}    
+                 
+                </div>
+          </div>
+            </div>
+        <!-- /今日热点 --> 
+      </div>
+          <!-- /body left --> 
+        </div>
+  </div>
+    </div>
+<!-- body end --> 
+<!-- 右侧固定导航菜单 start -->
+<div class="goto_top"> <a id='gotop_btn' class='show_go_0' href="javascript:;"></a> <a class='show_go_1' href="javascript:;"></a>
+      <div class="erwei_cnt"></div>
+    </div>
+<!-- /右侧固定导航菜单 end --> 
+<!-- footer start -->
+<!--<div class="footer clearfix">
+      <div class="footer-wrap container">
+    <p class=""><a target="_blank" href="http://shurufa.eastday.com/">东方输入法</a> - <a target="_blank" href="http://s.eastday.com/contactus.html">联系我们</a> - <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2476675226&site=qq&menu=yes">广告洽谈</a> - <a href="javascript:;" class="go_to_fankui">意见反馈</a></p>
+    <p>eastday.com All Right Reserve 版权所有 版权问题反馈：<a href="mailto:toutiao@em.eastday.com">toutiao@em.eastday.com</a></p>
+  </div>
+    </div>-->
+   
+<!-- footer end --> 
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/assets/js/jquery.min.js"></script> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/assets/js/jquery.cookie.js"></script> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/assets/js/resources/minicookie.js"></script> 
+<!--<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/assets/js/page_search.js"></script> --> 
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/assets/js/globle.js"></script>
+<div style="display:none;"> </div>
+ {dede:include filename="style_footer.htm"/}
+<!--[if IE 6]>
+    <script src="{dede:global.cfg_templets_skin/}/assets/js/DDPngMin.js"></script>
+    <script>
+        DD_belatedPNG.fix('.png24');
+        $('#gotop_btn').find('.erwei_cnt').append("<img src='{dede:global.cfg_templets_skin/}/assets/images/2codes.png'>");
+        $('a.show_go_1').on('mouseenter', function(){
+            $(this).siblings('.erwei_cnt').css({'display':'block','filter':'alpha(opacity=100)'});
+        });
+        $('a.show_go_1').on('mouseleave', function(){
+            $(this).siblings('.erwei_cnt').css({'display':'none','filter':'alpha(opacity=0)'});
+        });
+    </script>
+    <![endif]--> 
+<!--[if IE 7]>
+    <script>
+        $('#gotop_btn').find('.erwei_cnt').append("<img src='{dede:global.cfg_templets_skin/}/assets/images/2codes.png'>");
+        $('a.show_go_1').on('mouseenter', function(){
+            $(this).siblings('.erwei_cnt').css({'display':'block','filter':'alpha(opacity=100)'});
+        });
+        $('a.show_go_1').on('mouseleave', function(){
+            $(this).siblings('.erwei_cnt').css({'display':'none','filter':'alpha(opacity=0)'});
+        });
+    </script>
+    <![endif]-->
+</body>
+</html>
